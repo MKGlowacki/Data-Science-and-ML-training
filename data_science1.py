@@ -66,17 +66,14 @@ sns.jointplot(x='carat', y='price', data=diamonds, size=5)
 
 
 #analyze feature by feature, create hypotesis, try to find evidence
-#sns.factorplot(x='cut', data=diamonds, kind='count', aspect=1.5)
-#sns.factorplot(x='cut', y='price', data=diamonds, kind='box', aspect=1.5)
+sns.catplot(x='cut', data=diamonds, kind='count', aspect=1.5)
+sns.catplot(x='cut', y='price', data=diamonds, kind='box', aspect=1.5)
 
+sns.catplot(x='color', data=diamonds, kind='count', aspect=1.5)
+sns.catplot(x='color', y='price', data=diamonds, kind='violin', aspect=1.5)
 
-
-
-
-
-
-
-
+sns.catplot(x='clarity', data=diamonds, kind='count', aspect=1.5)
+sns.catplot(x='clarity', y='price', data=diamonds, kind='violin', aspect=1.5)
 
 
 
